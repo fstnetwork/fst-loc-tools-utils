@@ -1,0 +1,19 @@
+{
+  "name": "@fstnetwork/fst-loc-tools-utils",
+  "version": "0.1.0",
+  "main": "./src/index.js",
+  "repository": "git@github.com:fstnetwork/fst-loc-tools-utils.git",
+  "author": "FST NETWORK PTE. LTD.",
+  "license": "MIT",
+  "dependencies": {
+    "espree": "^8.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "echo build"
+  }
+}
