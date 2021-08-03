@@ -8,13 +8,13 @@ yarn add @fstnetwork/fst-loc-tools-utils
 
 ```javascript
 const { DataProcess } = require("@fstnetwork/fst-loc-tools-utils");
-const { FetchPotentialLabellingsFromDataProcess } = DataProcess;
+const { ExtractPotentialLabellingsFromDataProcess } = DataProcess;
 ```
 
-### FetchPotentialLabellingsFromDataProcess(data_process_obj)
+### ExtractPotentialLabellingsFromDataProcess(data_process_obj)
 
 ```javascript
-FetchPotentialLabellingsFromDataProcess({
+ExtractPotentialLabellingsFromDataProcess({
   data_process_name: "DataProcessAAA",
   data_input_body: {
     insurance_premium: "",
@@ -104,13 +104,13 @@ FetchPotentialLabellingsFromDataProcess({
 
 ```javascript
 const { Logic } = require("@fstnetwork/fst-loc-tools-utils");
-const { FetchPotentialLabellingsFromLogic } = Logic;
+const { ExtractPotentialLabellingsFromLogic } = Logic;
 ```
 
-### FetchPotentialLabellingsFromLogic(logic)
+### ExtractPotentialLabellingsFromLogic(logic)
 
 ```javascript
-FetchPotentialLabellingsFromLogic({
+ExtractPotentialLabellingsFromLogic({
   logic_name: "logic_AAA",
   logic_body: {
     ok: 'async function ok(ctx) {\n  if (ctx.tmp === undefined) {\n    ctx.tmp = {};\n  }\n  if (ctx.tmp.cond_ok !== false) {\n    if (req.body["insurance_premium"] > 0) {\n      ctx.tmp.cond_ok = true;\n    } else {\n      ctx.tmp.cond_ok = false;\n    }\n  }\n  return await ctx;\n}\n\nok(ctx);\n',

@@ -1,6 +1,6 @@
 const { scan_put_label_or_put_event } = require("../common/tokenize_ast.js");
 
-module.exports.FetchPotentialLabellingsFromLogic = function (logic) {
+module.exports.ExtractPotentialLabellingsFromLogic = function (logic) {
   if (
     logic.logic_body === undefined ||
     logic.logic_body.ok === undefined ||

@@ -1,6 +1,6 @@
 const { scan_put_label_or_put_event } = require("../common/tokenize_ast.js");
 
-module.exports.FetchPotentialLabellingsFromDataProcess = function (
+module.exports.ExtractPotentialLabellingsFromDataProcess = function (
   data_process
 ) {
   if (!Array.isArray(data_process.logics) || data_process.logics.length === 0)

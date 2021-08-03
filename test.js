@@ -1,10 +1,10 @@
 const { DataProcess } = require("./src/index.js");
-const { FetchPotentialLabellingsFromDataProcess } = DataProcess;
+const { ExtractPotentialLabellingsFromDataProcess } = DataProcess;
 
 const { Logic } = require("./src/index.js");
-const { FetchPotentialLabellingsFromLogic } = Logic;
+const { ExtractPotentialLabellingsFromLogic } = Logic;
 
-a = FetchPotentialLabellingsFromDataProcess({
+a = ExtractPotentialLabellingsFromDataProcess({
   data_process_name: "DataProcessAAA",
   data_input_body: {
     insurance_premium: "",
@@ -43,7 +43,7 @@ a = FetchPotentialLabellingsFromDataProcess({
   ],
 });
 
-b = FetchPotentialLabellingsFromLogic({
+b = ExtractPotentialLabellingsFromLogic({
   logic_name: "logic_AAA",
   logic_body: {
     ok: 'async function ok(ctx) {\n  if (ctx.tmp === undefined) {\n    ctx.tmp = {};\n  }\n  if (ctx.tmp.cond_ok !== false) {\n    if (req.body["insurance_premium"] > 0) {\n      ctx.tmp.cond_ok = true;\n    } else {\n      ctx.tmp.cond_ok = false;\n    }\n  }\n  return await ctx;\n}\n\nok(ctx);\n',

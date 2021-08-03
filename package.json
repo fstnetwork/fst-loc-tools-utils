@@ -1,6 +1,6 @@
 {
   "name": "@fstnetwork/fst-loc-tools-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./src/index.js",
   "repository": "git@github.com:fstnetwork/fst-loc-tools-utils.git",
   "author": "FST NETWORK PTE. LTD.",
